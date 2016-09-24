@@ -1,2 +1,2 @@
-Multiplayer RPS game with firbase.
+Multilayer RPS game with firebase.
 

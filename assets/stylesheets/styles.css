@@ -1,3 +1,7 @@
+body {
+/*  background-color: black;*/
+}
+
 /* Sticky Footer CSS */
   body {
     display: flex;
@@ -7,3 +11,51 @@
   main {
     flex: 1 0 auto;
   }
+
+  .rock-background, .paper-background, .scissors-background {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+.rock-background {
+    background-image: url(../images/rock.png);
+    background-size: 70%;
+  }
+.paper-background {
+    background-image: url(../images/paper.png);
+  }
+.scissors-background {
+    background-image: url(../images/scissors.png);
+    background-size: 70%;
+  }
+
+  #userGuess, #opponentGuess {
+    max-height: 100px;
+/*    filter: invert(100%);*/
+  }
+
+/* Flip opponent images */
+#opponentGuess, #opponent>.btn-floating {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+
+.dropdown-content {
+  background-color: #FFFFFF;
+  margin: 0;
+  display: none;
+  min-width: 300px; /* Changed this to accomodate content width */
+  max-height: auto;
+  margin-left: -1px; /* Add this to keep dropdown in line with edge of navbar */
+  overflow: hidden; /* Changed this from overflow-y:auto; to overflow:hidden; */
+  opacity: 0;
+  position: absolute;
+  white-space: nowrap;
+  z-index: 1;
+  will-change: width, height;
+}
