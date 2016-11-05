@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <title>MQS-RPS</title>
   <!--Import Google Icon Font-->
-  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Use secure so heroku doesn't have a hissy fit -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="assets/stylesheets/materialize.css"  media="screen,projection"/>
   <link rel="stylesheet" type="text/css" href="assets/stylesheets/styles.css">
   <!--Let browser know website is optimized for mobile-->
@@ -39,10 +40,12 @@
     <div class="container">
 
       <div class="row">
-        <div id="user" class="col s6 center-align">
+        <!-- stack on mobile -->
+        <div id="user" class="col s12 m6 center-align">
           <div class="card">
-            <div class="card-image">
-              <img id="userGuess" class="responsive-img">
+            <!-- Use materialize valign helpers to v center card image -->
+            <div class="card-image valign-wrapper">
+              <img id="userGuess" class="responsive-img valign">
               <span id="user-name" class="card-title"></span>
             </div>
             <div class="card-content">
@@ -55,10 +58,12 @@
             </div>
           </div>
         </div>
-        <div id="opponent" class="col s6 center-align">
+          <!-- stack on mobile -->
+        <div id="opponent" class="col s12 m6 center-align">
           <div class="card">
-            <div class="card-image">
-              <img id="opponentGuess" class="responsive-img">
+            <!-- Use materialize valign helpers to v center card image -->
+            <div class="card-image valign-wrapper">
+              <img id="opponentGuess" class="responsive-img valign">
               <span id="opponent-name" class="card-title"></span>
             </div>
             <div class="card-content">
