@@ -29,9 +29,17 @@ body {
     background-size: 70%;
   }
 
+  /*set min height to 320 or less -- most devices don't get smaller than 320*/
+  .card-image{
+    min-height: 320px;
+  }
+
+  /*adjust to not skew image*/
   #userGuess, #opponentGuess {
-    max-height: 100px;
-/*    filter: invert(100%);*/
+    height: auto;
+    /* filter: invert(100%); */
+    width: 320px;
+    margin: 0 auto;
   }
 
 /* Flip opponent images */
